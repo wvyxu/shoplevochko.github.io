@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+*, *:after, *:before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: .5s ease-in-out;
+ }
 
 @font-face {
     font-family: "Noto Sans", sans-serif;
@@ -38,12 +44,6 @@ header {
 
 .logo {
     cursor: pointer;
-    color: #9753E1;
-    font-family: "Roboto", sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 31.2px;
-    text-align: left;
     justify-self: flex-start;
 }
 
@@ -84,7 +84,7 @@ nav > a > p {
 }
 
 footer {
-    background-color: #0e1c28;
+    background-color: #525252;
 
     width: 100%;
     min-height: 200px;
@@ -107,48 +107,63 @@ footer {
     bottom: 0;
 }
 
-
-.docs {
+.footer-top, .footer-bottom {
     display: flex;
-    justify-content: space-around;
-    width: 40%;
+    justify-content: space-between;
 }
 
-.doc, .footer-about>p>a {
+.footer-nav {
+    display: flex;
+    width: 480px;
+    justify-content: space-between;
+}
+
+.footer-nav > a {
     text-decoration: none;
-    color: #969696;
+    color: #ffffff;
+}
+.footer-nav > a > p { 
+    text-transform: uppercase;
+    font-size: 16px;
 }
 
-.doc {font-weight: 600;}
-.footer-about>p>a { text-decoration: underline;}
-
-.doc:hover {
-    color: #fff;
-    transition: 0.4s;
-}
-
-.button {
-    border: 1px solid #6e777e;
-    border-radius: 5px;
-
-    width: 30px; height: 30px;
-
+.footer-content {
     display: flex;
-    justify-content: center;
-    align-items: center;
-
-    margin: 15px 10px 0 0;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 70px;
 }
 
-.button:hover {
-    background-color: #fff;
-    border: none;
-    transition: 0.4s;
+.footer-content > hr {
+    margin: 17px 0 13px ;
 }
 
-.download-app {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
 
+
+
+@media (width < 440px) {
+    header {
+        height: 80px;
+    }
+
+    .container {
+        width: 90%;
+    }
+    nav {
+        position: absolute;
+        bottom: -20px;
+        width: 90%;
+    }
+    nav > a > p {
+        font-size: 10px;
+        color: #fff;
+    }
+    .background-cont-nav {
+        background-color: #6e777e;
+        width: 100%;
+        height: 18px;
+    }
+    .feedback {
+        font-size: 12px;
+    }
+}

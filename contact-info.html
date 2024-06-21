@@ -59,22 +59,27 @@
 									<div>
 										<label for="name">Имя</label>
 										<input type="text" name="contact-info" id="name" placeholder="Имя">
+										<p class="nameError"></p>
 									</div>
 									<div>
 										<label for="patronymic">Отчество</label>
 										<input type="text" name="contact-info" id="patronymic" placeholder="Отчество">
+										<p class="patronymicError"></p>
 									</div>
 									<div class="full-row">
 										<label for="surname">Фамилия</label>
 										<input type="text" name="contact-info" id="surname" placeholder="Фамилия">
+										<p class="surnameError"></p>
 									</div>
 									<div class="full-row">
 										<label for="tel">Номер телефона</label>
 										<input type="text" name="contact-info" id="tel" placeholder="Номер телефона">
+										<p class="phoneError"></p>
 									</div>
 									<div class="full-row">
 										<label for="adress">Адрес доставки</label>
 										<input type="text" name="contact-info" id="adress" placeholder="Адрес доставки">
+										<p class="adressError"></p>
 									</div>
 									<div class="full-row row-checkbox">
 										<input type="checkbox" name="contact-info" id="rules">
@@ -140,12 +145,10 @@
 			</div>
 		</div>
 	</footer>
+	<script src="validation-contact-info.js"></script>
 	<script>
 		let back = document.querySelector(".back");
 		back.addEventListener("click", function() {window.location.href = `payment-method.html`;});
-
-		let next = document.querySelector(".next");
-		next.addEventListener("click", function() {window.location.href = `index.html`;});
 	</script>
 </body>
 </html>

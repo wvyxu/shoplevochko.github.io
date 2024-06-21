@@ -253,6 +253,7 @@
 }
 .feedback-form-elem > label {
     font-family: "Noto Sans", sans-serif;
+    margin-bottom: 7px;
 }
 
 .feedback-form-elem > input {
@@ -287,6 +288,13 @@
     background-color: #fff;
 }
 
+.feedback-form-elem > p {
+    color: #fff;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
 .about-company {
     display: flex;
     justify-content: space-between;
@@ -300,4 +308,30 @@
 }
 .name-about-company {
     margin: 0 0 50px;
+}
+
+@media (width < 440px) {
+    .name-sect{
+        font-size: 20px;
+        margin-top: 30px;
+    }
+    .logo {
+        width: 70px;
+    }
+    .showcase {
+        column-gap: 5px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .showcase:last-child {
+        display: none;
+    }
+    .price-card {
+        font-size: 14px;
+        margin: 0;
+    }
+    .showcase-item-name {
+        font-size: 10px;
+        width: auto;
+        margin-top: 5px;
+    }
 }

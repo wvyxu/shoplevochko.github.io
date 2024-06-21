@@ -113,6 +113,12 @@ a {
     height: 15px;
     margin-right: 8px;
 }
+.grid-form > div > p {
+    font-size: 14px;
+    margin-top: 5px;
+    color: red;
+    padding-left: 25px;
+}
 
 .grid-form > div:not(:nth-last-child(2)){
     display: flex;
