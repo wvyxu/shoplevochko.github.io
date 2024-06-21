@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <title>Корзина</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='style-basket.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style-main.css'>
+	<link rel="icon" type="image/x-icon" href="img/favicon.svg">
+	
+</head>
+<body>
+	<header>
+		<div class="container header">
+			<a href="index.html"><img class="logo" src="img/logo.svg" alt="logo" srcset=""></a>
+			<nav>
+				<a href="catalog.html"><p>Каталог</p></a>
+				<a href="index.html#about-company"><p>О компании</p></a>
+				<a href="index.html#news"><p>Новости</p></a>
+				<a href="contacts.html"><p>Контакты</p></a>
+			</nav>
+			<a href="contacts.html" class="feedback"><p>Обратная связь</p></a>
+			<div class="basket">
+				<a href="basket.html"><img src="./img/ic__basket.svg" alt="корзина" srcset=""></a>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="main">
+			<div class="container">
+				<div class="page">
+					<p><a href="index.html">Главная</a></p>
+					<p>></p>
+					<p><a href="catalog.html">Корзина</a></p>
+				</div>
+				<h1 class="name-sect">Корзина</h1>
+				<div class="main-container">
+					<div class="tabs-container">
+						<ul class="tabs">
+						  <li class="active">
+							<a href="basket.html">Товары</a>
+						  </li>
+						  <li>
+							<a href="payment-method.html">Способ оплаты</a>
+						  </li>
+						  <li>
+							<a href="#">Контактные данные</a>
+						  </li>
+						</ul>
+						</div>
+					</div>
+
+					<div class="cart-header">
+                        <p class="cart-info-name">наименование</p>
+                        <p class="cart-info-quantity">количество</p>
+                        <p class="cart-info-cost">стоимость</p>
+                        <p class="cart-info-sum">сумма</p>
+                    </div>
+
+                    <div class="product">
+                        <div class="product-img"><img src="./img/showcase-item-img1.jfif" alt="Apple MacBook Air 13"></div>
+                        <h1 class="product-name">Платье летнее женское пляжное</h1>
+                        <div class="product-count">
+                            <div class="product-quantity">
+								<button class="minus-quantity">–</button>
+								<input type="number" name="quantity" id="quantity" value="1">
+								<button class="plus-quantity">+</button>
+							</div>
+                        </div>
+                        <p class="product-price">110 000 руб.</p>
+						<p class="product-sum">10290 руб.</p>
+                        <div class="product-controls">
+                            <button type="button">
+                                <img src="./img/cart-delete-button.svg" alt="Delete">
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product">
+                        <div class="product-img"><img src="./img/showcase-item-img2.jfif" alt="Apple watch"></div>
+                        <h1 class="product-name">Платье домашнее</h1>
+                        <div class="product-quantity">
+							<button class="minus-quantity">–</button>
+							<input type="number" name="quantity" id="quantity" value="1">
+							<button class="plus-quantity">+</button>
+						</div>
+                        <p class="product-price">29 000 руб.</p>
+						<p class="product-sum">10290 руб.</p>
+                        <div class="product-controls">
+                            <button type="button">
+                                <img src="./img/cart-delete-button.svg" alt="Delete">
+                            </button>
+                        </div>
+                    </div>
+					<div class="cart-footer">
+                        <p class="cart-footer-count">3 шт.</p>
+                        <p class="cart-footer-price">329 000 руб.</p>
+                    </div>
+					<div class="button-outline">
+						<button class="next" type="button">Далее</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</main>
+	<footer>
+		<div class="footer">
+			<div class="footer-about">
+				<p>Работает на эффективном ядре<br><a href="#">foodpicásso</a>&trade; ver. 2</p>
+			</div>
+			<div class="docs">
+				<p><a href="#" class="doc">Политика конфиденциальности</a></p>
+				<p><a href="#" class="doc">Публичная оферта</a></p>
+			</div>
+			
+			<div class="app">
+				<p>Акции, скидки, кэшбэк − в нашем приложении!</p>
+				<div class="download-app">
+					<div class="button">
+						<a href="https://apps.apple.com/us/app/%D0%BF%D0%B0%D0%BF%D0%B0-sous-%D0%B0%D0%B1%D0%B0%D0%BA%D0%B0%D0%BD/id1625872910">
+							<img alt="apple store" src="data:image/svg+xml,%3Csvg%20width%3D%2217%22%20height%3D%2220%22%20viewBox%3D%220%200%2017%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M11.9745%200.873047C12.1094%201.95549%2011.6624%203.04475%2010.9888%203.83202C10.3149%204.61774%209.20391%205.23175%208.11034%205.1582C7.95112%204.09853%208.4933%202.9891%209.11784%202.29253C9.81257%201.50759%2010.9953%200.916305%2011.9745%200.873047ZM15.5677%207.15706C15.4142%207.24647%2013.4572%208.3868%2013.501%2010.6845C13.5531%2013.4815%2016.1204%2014.3974%2016.149%2014.4068C16.1481%2014.4098%2016.1464%2014.4154%2016.1438%2014.4231C16.0918%2014.5875%2015.7099%2015.7964%2014.8247%2017.0463C14.0226%2018.177%2013.1897%2019.3041%2011.8641%2019.3355C11.2255%2019.351%2010.7972%2019.1788%2010.3522%2019C9.88698%2018.8128%209.40299%2018.6183%208.64069%2018.6234C7.84292%2018.6285%207.34069%2018.8353%206.8567%2019.0346C6.43683%2019.2076%206.03055%2019.3747%205.45677%2019.3999C4.17645%2019.4539%203.18829%2018.196%202.36103%2017.0805C0.66615%2014.7961%20-0.649567%2010.6147%201.04202%207.77467C1.88135%206.36456%203.39768%205.465%205.05227%205.43247C5.76507%205.41457%206.45845%205.67021%207.06525%205.89398C7.5282%206.06471%207.94073%206.21688%208.27302%206.21476C8.57236%206.21279%208.97214%206.06013%209.43822%205.88213C10.1709%205.60238%2011.0672%205.25995%2011.9949%205.34233C12.6305%205.36366%2014.4165%205.57002%2015.5741%207.1533C15.5726%207.15428%2015.5704%207.15551%2015.5677%207.15706Z%22%20fill%3D%22%23969696%22%2F%3E%0A%3C%2Fsvg%3E%0A">
+						</a>
+					</div>
+					<div class="button">
+						<a href="https://play.google.com/store/apps/details?id=com.foodpicasso.papasous">
+							<img alt="play google" src="data:image/svg+xml,%3Csvg%20width%3D%2216%22%20height%3D%2217%22%20viewBox%3D%220%200%2016%2017%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M9.23264%208.35829L2.46512%2016.6584C1.45147%2016.6454%200.770511%2015.8143%200.769561%2014.5814L0.777215%202.20768C0.77807%200.963278%201.46881%200.12847%202.49677%200.128971C2.50791%200.1291%202.51934%200.131779%202.53053%200.134455C2.54076%200.136881%202.55124%200.139309%202.56134%200.139744L9.23264%208.35829ZM12.6027%205.62314L14.4508%206.69283C15.2047%207.12903%2015.6168%207.73475%2015.6165%208.40112C15.6162%209.06756%2015.202%209.67623%2014.4479%2010.1106L12.6416%2011.1524L10.3729%208.3581L12.6027%205.62314ZM11.8258%205.17712L4.22061%200.777945L9.8039%207.65682L11.8258%205.17712ZM4.06262%2016.0994L9.80243%209.0579L11.8654%2011.5994L4.06262%2016.0994Z%22%20fill%3D%22%23969696%22%2F%3E%0A%3C%2Fsvg%3E">
+						</a>
+					</div>
+					
+				</div>
+				
+			</div>
+		</div>
+	</footer>
+
+
+
+	<script> //функция для изменения количества товаров
+		let plus = document.querySelectorAll(".plus-quantity");
+		let minus = document.querySelectorAll(".minus-quantity");
+		let quantity = document.querySelectorAll("#quantity");
+		
+		for (let i = 0; i <= plus.length; i++) {
+			for (let j = 0; j <= quantity.length; j++) {
+				plus[i].addEventListener("click", function() {
+					if (i == j) {
+						quantity[j].value++;
+					}
+				});
+			}
+		}
+		
+		
+	</script>
+	<script>
+		for (let i = 0; i <= minus.length; i++) {
+			for (let j = 0; j <= quantity.length; j++) {
+				minus[i].addEventListener("click", function() {
+					if (i == j && quantity[j].value > 1) {
+						quantity[j].value--;
+					}
+				});
+			}
+		}
+	</script>
+	<script>
+		let next = document.querySelector(".next");
+		next.addEventListener("click", function() {window.location.href = `payment-method.html`;})
+	</script>
+	<script>
+		quantity.forEach(element => {
+			if (element < 0) {
+				element.value = 0;
+			}
+		});
+		
+	</script>
+</body>
+</html>
